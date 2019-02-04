@@ -38,7 +38,7 @@ socket.on('updateUserList', function (users) {
     var ol = jQuery('<ol></ol>');
 
     users.forEach(function(name) {
-        ol.append(jQuery('<li></li>').text(user));
+        ol.append(jQuery('<li></li>').text(name));
     });
 
     jQuery('#users').html(ol);
